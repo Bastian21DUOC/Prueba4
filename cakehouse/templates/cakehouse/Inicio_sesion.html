@@ -1,0 +1,41 @@
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'cakehouse/Inicio_sesion.css' %}">
+
+
+
+<div id=ventana1>
+
+            <div id="ajuste_ventana">
+            <form action="Home.html" method="POST">
+            <h4>Inicio de sesion</h4>
+            <div class="form-floating mb-3">
+                <input type="rut" class="form-control" id="floatingInput" placeholder="11111111-1" required>
+                <label for="floatingInput">RUT</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" required>
+                <label for="floatingPassword">Contaseña</label>
+              </div>
+              <br>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Iniciar Sesion</button>
+              </div>
+            </form>
+            </div>
+            
+        
+        </div>
+        
+<div id="ventana2">
+        
+          <div id="ajuste_ventana">
+          <br>
+          <h4>¿No tienes una cuenta?</h4>
+          <br>
+            <a class="btn btn-primary" href="{% url 'cakehouse:Registro' %}" role="button">Crear cuenta nueva</a>
+          </div>
+          <br>
+          
+        
+        </div>
